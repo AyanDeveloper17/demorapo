@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>This is home Page :- </h1>
+    <p>Click on any button to see dynamic url</p>
+
+    <a href="{% url 'dynamic' 1 %}">ID NO. 1</a>
+    <a href="{% url 'converter' 3%}">ID NO.1 By Converter</a>
+    {% comment %} <a href="{% url 'converter' pk%}">ID NO.2 By Converter</a>
+    <a href="{% url 'converter' pk%}">ID NO.3 By Converter</a>
+    <a href="{% url 'converter' pk%}">ID NO.4 By Converter</a> {% endcomment %}
+    <a href="{% url 'doubleid' 12 1%}">Double id passing</a>
+</body>
+</html>
